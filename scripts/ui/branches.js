@@ -58,6 +58,7 @@ exports.open = repo => {
 }
 
 function refresh(repo) {
+  $ui.loading(true);
   bridge.invokeNode(repo, "listBranches", null, results => {
     _branches = results.branches;
     const view = $("branch-list");
@@ -69,6 +70,7 @@ function refresh(repo) {
         }
       }
     });
+    $ui.loading(false);
   });
 }
 

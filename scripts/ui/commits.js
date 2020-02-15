@@ -95,6 +95,7 @@ exports.open = repo => {
 }
 
 function refresh(repo) {
+  $ui.loading(true);
   bridge.invokeNode(repo, "log", commits => {
     _commits = commits;
     const view = $("commits-list");
@@ -114,6 +115,7 @@ function refresh(repo) {
         }
       }
     });
+    $ui.loading(false);
   });
 }
 

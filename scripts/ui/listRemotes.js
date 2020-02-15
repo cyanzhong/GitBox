@@ -62,6 +62,7 @@ module.exports = repo => {
 }
 
 function refresh(repo) {
+  $ui.loading(true);
   bridge.invokeNode(repo, "listRemotes", remotes => {
     states.remotes = remotes;
     $("remotes-list").data = remotes.map(item => {
@@ -71,6 +72,7 @@ function refresh(repo) {
         }
       };
     });
+    $ui.loading(false);
   });
 }
 

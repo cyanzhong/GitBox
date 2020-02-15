@@ -42,9 +42,11 @@ exports.open = repo => {
 }
 
 function refresh(repo) {
+  $ui.loading(true);
   bridge.invokeNode(repo, "listTags", (tags) => {
     states.tags = tags;
     $("tags-list").data = tags;
+    $ui.loading(false);
   });
 }
 

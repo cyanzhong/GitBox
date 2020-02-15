@@ -87,6 +87,7 @@ exports.open = repo => {
 }
 
 function refresh(repo) {
+  $ui.loading(true);
   bridge.invokeNode(repo, "statusMatrix", status => {
     const data = [];
     const convert = (type, path) => {
@@ -116,6 +117,7 @@ function refresh(repo) {
 
     const view = $("status-list");
     view.data = data;
+    $ui.loading(false);
   });
 }
 
