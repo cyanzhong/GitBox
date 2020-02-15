@@ -85,7 +85,7 @@ function settings() {
 function refresh() {
   const fs = require("../util/fs");
   const folder = fs.codeFolder;
-  const names = $file.list(folder);
+  const names = $file.list(folder).sort();
   
   const repos = names.filter(name => {
     return $file.exists(`${folder}/${name}/.git`);
