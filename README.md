@@ -1,6 +1,6 @@
 # GitBox
 
-A Git GUI for JSBox, based on [isomorphic-git](https://isomorphic-git.org/)
+A Git GUI for [JSBox](https://apps.apple.com/app/id1312014438), based on [isomorphic-git](https://isomorphic-git.org/)
 
 # Instructions
 
