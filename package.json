@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "isomorphic-git": "0.78.3",
+    "diff": "4.0.2"
+  }
+}
