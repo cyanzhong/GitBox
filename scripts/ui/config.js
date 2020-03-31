@@ -46,7 +46,7 @@ module.exports = (repo, callback) => {
                     props: {
                       id: "name-label",
                       type: $kbType.ascii,
-                      bgcolor: colors.white,
+                      bgcolor: colors.inputBackground,
                       placeholder: "user.name",
                       text: config.name
                     },
@@ -67,7 +67,7 @@ module.exports = (repo, callback) => {
                     props: {
                       id: "email-label",
                       type: $kbType.email,
-                      bgcolor: colors.white,
+                      bgcolor: colors.inputBackground,
                       placeholder: "user.email",
                       text: config.email
                     },

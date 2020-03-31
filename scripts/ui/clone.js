@@ -23,7 +23,7 @@ module.exports = callback => {
                   type: "input",
                   props: {
                     id: "clone-name",
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Repository Name"
                   },
                   layout: make => {
@@ -48,7 +48,7 @@ module.exports = callback => {
                   props: {
                     id: "clone-url",
                     type: $kbType.url,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Repository URL (http/https only)"
                   },
                   layout: make => {
@@ -74,7 +74,7 @@ module.exports = callback => {
                   props: {
                     id: "clone-username",
                     type: $kbType.ascii,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Username"
                   },
                   layout: make => {
@@ -125,7 +125,7 @@ module.exports = callback => {
                   props: {
                     id: "clone-auth",
                     type: $kbType.ascii,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Password",
                     secure: true
                   },

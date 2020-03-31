@@ -26,7 +26,7 @@ module.exports = (repo, title, callback) => {
                   props: {
                     id: "input-username",
                     type: $kbType.ascii,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Username"
                   },
                   layout: make => {
@@ -86,7 +86,7 @@ module.exports = (repo, title, callback) => {
                   props: {
                     id: "input-auth",
                     type: $kbType.ascii,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Password",
                     secure: true
                   },

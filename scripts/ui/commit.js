@@ -26,7 +26,7 @@ module.exports = repo => {
         type: "text",
         props: {
           id: "commit-message",
-          bgcolor: colors.lightBackground,
+          bgcolor: colors.textAreaBackground,
           placeholder: "Commit message...",
           smoothRadius: 6
         },

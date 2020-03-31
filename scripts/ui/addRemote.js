@@ -25,7 +25,7 @@ module.exports = callback => {
                   props: {
                     id: "remote-label",
                     type: $kbType.ascii,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "Remote"
                   },
                   layout: make => {
@@ -45,7 +45,7 @@ module.exports = callback => {
                   props: {
                     id: "url-label",
                     type: $kbType.url,
-                    bgcolor: colors.white,
+                    bgcolor: colors.inputBackground,
                     placeholder: "URL"
                   },
                   layout: make => {

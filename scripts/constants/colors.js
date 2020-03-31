@@ -1,4 +1,11 @@
-exports.white = $color("#ffffff");
 exports.defaultText = $color("#333333");
 exports.selectedText = $color("#157efb");
-exports.lightBackground = $color("#F0F0F0");
+
+exports.inputBackground = $color({
+  light: "#ffffff",
+  dark: "#141414"
+});
+exports.textAreaBackground = $color({
+  light: "#f0f0f0",
+  dark: "#1c1c1e"
+});

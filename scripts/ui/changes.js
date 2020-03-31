@@ -9,7 +9,7 @@ exports.open = repo => {
         props: {
           id: "state-tab",
           items: ["Unstaged", "Staged"],
-          bgcolor: $rgb(240, 240, 240)
+          bgcolor: $color("systemGray6")
         },
         events: {
           changed: () => {
